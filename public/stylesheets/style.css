@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100|Economica');
+
+html { font-size: 1px; }
+body {
+    margin: 0;
+    
+    font-size: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('http://static.tumblr.com/qnaj3cm/Mialkpwbf/glitter_by_ermenelwen.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    display: flex;
+}
+
+h1 {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Advent Pro', sans-serif;
+    color: hotpink;
+    background: purple;
+    border: 10px double black;
+}
+
+h2 {
+    font-family: 'Economica', sans-serif;
+    background: black;
+    padding-left: 75px;
+    padding-right: 10px;
+    margin-left: 75px; 
+    margin-right: 50px;
+    border: 2px solid hotpink;
+}
+.vidButton {
+    font-family: 'Economica', sans-serif;
+    margin-left: 75px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background: black; 
+    border: 2px solid hotpink;
+}
+
+.homeButton {
+    font-family: 'Economica', sans-serif;
+    margin-left: 75px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background: black; 
+    border: 2px solid hotpink;
+}
+
+
+.gif {
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    margin-top: 320px;
+    padding: 100px;
+    background-image: url('../images/nat.gif');
+    background-size: cover;
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+.marker, .o, .l, .t, .a1, .n, .a2, .a3, .apost, .s, .w, .o2, .r, .l2 {
+    animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    will-change: transform;
+    display: inline;
+}
+
+
+.marker {
+    position: relative; top: 3rem; left: -3rem;
+    height: 3rem; width: 40rem;
+    background-color: white;
+    animation-name: marker;
+    border: 1px solid black; 
+    
+}
+
+.o { margin-left: 1rem;   animation-name: o; }
+.l { margin-left: 6rem; animation-name: l; }
+.t { margin-left: 12rem; animation-name: t; }
+.a1 { margin-left: 18rem; animation-name: a1; }
+.n { margin-left: 24rem; animation-name: n; }
+.a2 { margin-left: 30rem; animation-name: a2; }
+.a3 { margin-left: 36rem; animation-name: a3; }
+.apost { margin-left: 36rem; animation-name: apost; }
+.s { margin-left: 30rem; animation-name: s; }
+.w { margin-left: 24rem; animation-name: w; }
+.o2 { margin-left: 18rem; animation-name: o2; }
+.r { margin-left: 12rem; animation-name: r; }
+.l2 { margin: 0 6rem 0 1rem; animation-name: l2; }
+
+@keyframes o { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(10rem); }
+}
+@keyframes l { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(20rem); }
+}
+@keyframes t { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(30rem); }
+}
+@keyframes a1 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(40rem); }
+}
+@keyframes n { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(55rem); }
+}
+@keyframes a2 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(70rem); }
+}
+@keyframes a3 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(80rem); }
+}
+@keyframes apost { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(70rem); }
+}
+@keyframes s { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(55rem); }
+}
+@keyframes w { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(40rem); }
+}
+@keyframes o2 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(30rem); }
+}
+@keyframes r { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(20rem); }
+}
+@keyframes l2 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(10rem); }
+}
+@keyframes marker { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(1520rem); }
+}
