@@ -19,7 +19,7 @@ h1 {
     margin: 5px;
     padding: 10px;
     font-family: 'Advent Pro', sans-serif;
-    color: hotpink;
+    color: goldenrod;
     background: purple;
     border: 10px double black;
 }
@@ -51,6 +51,11 @@ h3 {
     color: white;
     background: black; 
     border: 2px solid hotpink;
+}
+video {
+    position: absolute;
+    margin-top: 300px;
+    padding: 400px;
 }
 
 .homeButton {
