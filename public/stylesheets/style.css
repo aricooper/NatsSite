@@ -2,14 +2,11 @@
 
 html { font-size: 1px; }
 body {
-    margin: 0;
-    
     font-size: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('http://static.tumblr.com/qnaj3cm/Mialkpwbf/glitter_by_ermenelwen.jpg');
-    background-position: center;
+    background-image: url('../images/nat.gif');
     background-size: cover;
 }
 
@@ -34,6 +31,16 @@ h2 {
     padding-right: 10px;
     margin-left: 75px; 
     margin-right: 50px;
+    border: 2px solid hotpink;
+}
+h3 {
+    position: absolute;
+    font-family: 'Economica', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: black;
+    padding: 10px;
+    margin-top: 100px;
     border: 2px solid hotpink;
 }
 .vidButton {
