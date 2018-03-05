@@ -13,7 +13,9 @@
     "jade": "~1.11.0",
     "less-middleware": "~2.2.1",
     "morgan": "~1.9.0",
+    "nib": "1.1.2",
     "serve-favicon": "~2.4.5",
+    "stylus": "0.54.5",
     "tidalapi": "^0.2.3"
   }
 }

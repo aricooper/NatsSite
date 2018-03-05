@@ -83,7 +83,7 @@ h2 {
 .marker {
     position: relative; top: 3rem; left: -3rem;
     height: 3rem; width: 40rem;
-    background-color: white;
+    background-image: url(https://d1l272ln4ns4m0.cloudfront.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/x/r/xr-af481-2.jpg);
     animation-name: marker;
     border: 1px solid black; 
     
