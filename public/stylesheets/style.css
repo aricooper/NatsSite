@@ -8,11 +8,8 @@ body {
     justify-content: center;
     background-image: url('../images/nat.gif');
     background-size: cover;
-}
-
-main {
-    position: relative;
-    display: flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -52,10 +49,10 @@ h3 {
     background: black; 
     border: 2px solid hotpink;
 }
-video {
+.block {
     position: absolute;
-    margin-top: 300px;
-    padding: 400px;
+    margin-top: 900px;
+    margin-right: 300px;
 }
 
 .homeButton {
@@ -98,7 +95,7 @@ video {
     background-image: url(https://d1l272ln4ns4m0.cloudfront.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/x/r/xr-af481-2.jpg);
     animation-name: marker;
     border: 1px solid black; 
-    
+
 }
 
 .o { margin-left: 1rem;   animation-name: o; }
