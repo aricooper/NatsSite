@@ -15,11 +15,14 @@ block content
     .a3
         h1 S
     a(class='homeButton', href='/') Home
-    h3 pick a video and listen to random accompanyment from TIDAL
+    button(class='vidButton', onclick='startMusic();') Random
+    h3 pick a video and listen to a random accompanyment from TIDAL
+  
     .block
         video(width='1280', height='720', id='videoPlayer')
             source(src= '../videos/jtree.mp4' type= 'video/mp4')
         video(width='1280', height='720', id='videoPlayer2')
             source(src= '../videos/impostra.mp4' type= 'video/mp4')
-        script(type= 'text/javascript', src='../javascripts/vidOnClick.js')          
+        script(type= 'text/javascript', src='../javascripts/vidOnClick.js')  
+        
        
