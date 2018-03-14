@@ -7,7 +7,7 @@ var api = new TidalAPI({
     // Could also be 'LOSSLESS' but this only supported on premium subscriptions
     quality: 'HIGH'
 });
-startMusic();
+//startMusic();
 
 //videoPlayer.addEventListener('click', function () {
 //    startMusic();
@@ -31,8 +31,19 @@ startMusic();
 
 
 function startMusic() {
+
     console.log('Tidal:  \n');
-    api.search({type: 'artists', query: 'Dream Theater', limit: 1}, function (data) {
-        console.log(data.artists);
+
+    api.getTrackInfo(random(), function(data){
+        console.log(data.url);
     });
+    console.log('done');
+
+
+}
+
+function random() {
+    var track = Math.floor(Math.random() * 2889999) + 1000000;
+    console.log(track);
+    return track;
 }
