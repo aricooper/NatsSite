@@ -11,6 +11,9 @@ var nib = require('nib');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var videos = require('./routes/videos');
+var menu = require('./routes/menu');
+var writing = require('./routes/writing');
+var photos = require('./routes/photos');
 
 var app = express();
 function compile(str, path) {
@@ -39,6 +42,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/videos', videos);
+app.use('/photos', photos);
+app.use('/menu', menu);
+app.use('/writing', writing);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

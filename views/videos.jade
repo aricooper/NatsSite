@@ -15,8 +15,9 @@ block content
     .a3
         h1 S
     a(class='homeButton', href='/') Home
-    button(class='vidButton', onclick='startMusic();') Random
-    h3 pick a video and listen to a random accompanyment from TIDAL
+    //
+        button(class='vidButton', onclick='startMusic();') Random Song
+    h3 Check out my Videos!!
   
     .block
         video(width='1280', height='720', id='videoPlayer')
@@ -24,6 +25,6 @@ block content
         video(width='1280', height='720', id='videoPlayer2')
             source(src= '../videos/impostra.mp4' type= 'video/mp4')
         script(type= 'text/javascript', src='../javascripts/vidOnClick.js')  
-        
-       a(class="tidal-embed" data-type="t" data-id="random()")
+       // 
+        a(class="tidal-embed" data-type="t" data-id="random()")
        script(src="https://embed.tidal.com/tidal-embed.js")

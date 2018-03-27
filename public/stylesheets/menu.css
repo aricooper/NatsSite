@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100|Economica');
+.body {
+    float: none;
+    width: 100vw;
+    height: 100vh;
+}
+h2 {
+    display: block;
+    position: absolute;
+    border: 2px solid hotpink;
+    background: goldenrod;
+    margin-top: 150px;
+    padding: 10px;
+    font-family: 'Economica', sans-serif;
+}
+
+h3 {
+    display: block;
+    font-family: 'Economica', sans-serif;
+    font-size: 50px;
+}
+
+h4 {
+    display: block;
+    position: absolute;
+    margin-top: -100px;
+    font-family: 'Economica', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+h5 {
+    display: block;
+    position: absolute;
+    font-family: 'Economica', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.docScroller {
+    overflow-x: hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% 0%;
+}
+
+.inside {
+    width: 80vw;
+    margin: 10vh 0 0 10vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframe {
+    width: 80vw;
+    height: 80vh;
+}
+
+
+.one {
+    background-image: url('../images/nat.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.two {
+    background: purple;
+}
+.three {
+    background: red;
+}
+.four {
+    background: orange;
+}
+
+div.gallery {
+    border: 5px solid goldenrod;
+}
+
+div.gallery:hover {
+    border: 5px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 30px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    padding: 10px;
+    font-family: 'Advent Pro', sans-serif;
+    color: goldenrod;
+    background: purple;
+    border: 10px double black;
+}
+.o, .l, .t, .a3, .apost, .s, .w, .h {
+    animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    will-change: transform;
+    display: inline;
+}
+.h { margin-left: -100rem;   animation-name: h; }
+.o { margin-left: 2rem;   animation-name: o; }
+.l { margin-left: 2rem; animation-name: l; }
+.t { margin-left: 2rem; animation-name: t; }
+.a3 { margin-left: 20rem; animation-name: a3; }
+.apost { margin-left: 2rem; animation-name: apost; }
+.s { margin-left: 2rem; animation-name: s; }
+.w { margin-left: 2rem; animation-name: w; }
+
+@keyframes h { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(45vw); }
+}
+@keyframes o { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(55vw); }
+}
+@keyframes l { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(65vw); }
+}
+@keyframes t { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(75vw); }
+}
+
+@keyframes a3 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(80vw); }
+}
+@keyframes apost { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(70vw); }
+}
+@keyframes s { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(60vw); }
+}
+@keyframes w { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(50vw); }
+}
+
