@@ -2,11 +2,11 @@ extends layout
 
 block content
     script(type= 'text/javascript', src='../javascripts/vidOnClick.js')
-    .o
+    .v
         h1 V
-    .l
+    .a2
         h1 I
-    .t
+    .o
         h1 D
     .a1
         h1 E
@@ -14,10 +14,10 @@ block content
         h1 O
     .a3
         h1 S
-    a(class='homeButton', href='/') Home
+    a(class='homeButton', href='/menu') Home
     //
         button(class='vidButton', onclick='startMusic();') Random Song
-    h3 Check out my Videos!!
+    h3 Check out my Videos Here!!
   
     .block
         video(width='1280', height='720', id='videoPlayer')
@@ -27,4 +27,4 @@ block content
         script(type= 'text/javascript', src='../javascripts/vidOnClick.js')  
        // 
         a(class="tidal-embed" data-type="t" data-id="random()")
-       script(src="https://embed.tidal.com/tidal-embed.js")
+        script(src="https://embed.tidal.com/tidal-embed.js")
