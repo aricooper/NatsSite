@@ -71,8 +71,4 @@ app.use(function(err, req, res, next) {
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
-<<<<<<< HEAD
 module.exports = app;
-=======
-module.exports = app;
->>>>>>> 28b83398b655db97ef69f1329c104c9c5ff8b10e
