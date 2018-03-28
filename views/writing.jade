@@ -1,19 +1,26 @@
-extends layout
-
-block content
-    .o
-        h1 W
-    .l
-        h1 R
-    .t
-        h1 I
-    .a1
-        h1 T
-    .a3
-        h1 I
-    .apost
-        h1 N
-    .s
-        h1 G
-    a(class='homeButton', href='/menu') Home
-    h3 Check out my Poems, Essays, and Interviews Here!!
+html
+  head
+    title #{title}
+    
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='/images/rupaul.ico', type='image/x-icon')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Work+Sans:100')
+  body
+    block content
+        .o
+            h1 W
+        .l
+            h1 R
+        .t
+            h1 I
+        .a1
+            h1 T
+        .a3
+            h1 I
+        .apost
+            h1 N
+        .s
+            h1 G
+        a(class='homeButton', href='/menu') Home
+        h3 Check out my Poems, Essays, and Interviews Here!!

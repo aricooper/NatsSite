@@ -1,30 +1,37 @@
-extends layout
+html
+  head
+    title #{title}
+    
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='/images/rupaul.ico', type='image/x-icon')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Work+Sans:100')
+  body
+    block content
+        script(type= 'text/javascript', src='../javascripts/vidOnClick.js')
+        .v
+            h1 V
+        .a2
+            h1 I
+        .o
+            h1 D
+        .a1
+            h1 E
+        .a2
+            h1 O
+        .a3
+            h1 S
+        a(class='homeButton', href='/menu') Home
+        //
+            button(class='vidButton', onclick='startMusic();') Random Song
+        h3 Check out my Videos Here!!
 
-block content
-    script(type= 'text/javascript', src='../javascripts/vidOnClick.js')
-    .v
-        h1 V
-    .a2
-        h1 I
-    .o
-        h1 D
-    .a1
-        h1 E
-    .a2
-        h1 O
-    .a3
-        h1 S
-    a(class='homeButton', href='/menu') Home
-    //
-        button(class='vidButton', onclick='startMusic();') Random Song
-    h3 Check out my Videos Here!!
-  
-    .block
-        video(width='1280', height='720', id='videoPlayer')
-            source(src= '../videos/jtree.mp4' type= 'video/mp4')
-        video(width='1280', height='720', id='videoPlayer2')
-            source(src= '../videos/impostra.mp4' type= 'video/mp4')
-        script(type= 'text/javascript', src='../javascripts/vidOnClick.js')  
-       // 
-        a(class="tidal-embed" data-type="t" data-id="random()")
-        script(src="https://embed.tidal.com/tidal-embed.js")
+        .block
+            video(width='1280', height='720', id='videoPlayer')
+                source(src= '../videos/jtree.mp4' type= 'video/mp4')
+            video(width='1280', height='720', id='videoPlayer2')
+                source(src= '../videos/impostra.mp4' type= 'video/mp4')
+            script(type= 'text/javascript', src='../javascripts/vidOnClick.js')  
+           // 
+            a(class="tidal-embed" data-type="t" data-id="random()")
+            script(src="https://embed.tidal.com/tidal-embed.js")
