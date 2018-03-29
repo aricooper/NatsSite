@@ -36,10 +36,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public')));
-app.use(stylus.middleware(
-  { src: __dirname + '/public'
-  , compile: compile
-  }));
+//app.use(stylus.middleware(
+//  { src: __dirname + '/public'
+//  , compile: compile
+//  }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
