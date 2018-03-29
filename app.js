@@ -22,8 +22,8 @@ function compile(str, path) {
     .use(nib())
 }
 // set up port
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || 'localhost';
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
